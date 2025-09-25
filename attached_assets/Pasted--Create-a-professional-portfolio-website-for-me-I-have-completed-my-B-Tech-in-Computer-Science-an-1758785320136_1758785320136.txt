@@ -1,0 +1,108 @@
+*"Create a professional portfolio website for me.
+
+I have completed my B.Tech in Computer Science and Engineering (2025). I am passionate about Data Analytics and Artificial Intelligence, with strong skills in Python, R, SQL, Java, Data Visualization, and Machine Learning.
+
+Education
+
+B.Tech in Computer Science and Engineering
+
+
+Skills
+
+Programming & Data: Python, R, SQL, Java
+
+Data Analytics: Data Cleaning, Visualization, EDA, Business Insights
+
+Machine Learning/AI: Supervised Learning, BERT, RAG, Recommendation Systems
+
+Other: Problem-Solving, Team Leadership
+
+
+Certifications
+
+Google Data Analytics Specialization (Coursera) – 8 courses (SQL, R, Spreadsheets, Visualization, Capstone)
+
+Supervised Machine Learning (Coursera)
+
+Crash Course on Python (Coursera)
+
+Java Programming: Solving Problems with Software (with Honors)
+
+
+Projects & Simulations
+
+1. Data Analyst Job Simulation
+
+Analyzed real-world datasets.
+
+Extracted actionable insights and prepared business-style reports.
+
+
+
+2. Flight Delay Prediction
+
+Built an ML model to predict flight delays.
+
+Applied EDA and predictive modeling for accuracy improvement.
+
+
+
+3. Content Engine with Retrieval-Augmented Generation
+
+Compared multiple business reports using RAG techniques.
+
+Implemented LlamaIndex, ChromaDB, BERT, and Streamlit for a chatbot interface.
+
+
+
+4. AI-Powered Personalized E-Learning Platform (Final Year Project – Team TechTitans)
+
+Developed an adaptive learning platform with AI-based recommendations.
+
+Role: Team Leader, guiding project design and implementation.
+
+
+
+5. Weather Chatbot for Metro Cities
+
+Created a conversational chatbot to provide real-time weather updates.
+
+Integrated APIs for live data retrieval.
+
+
+
+6. Educational Website
+
+Built a website dedicated to hosting and streaming educational content.
+
+My first complete web project, showcasing front-end design and backend integration.
+
+
+
+
+Experience
+
+Internship & Simulations – Data Analysis, Machine Learning, and AI-based projects
+
+Capstone & Assignments – Applied RAG, ML models, and data-driven problem solving
+
+
+Hobbies
+
+Writing, Photography, Poetry – Exploring creative expression, often writing emotionally reflective pieces on resilience and human struggle.
+
+
+Portfolio Design Requirements
+
+Sections: Home/About, Education, Skills, Certifications, Projects, Experience, Hobbies, Contact
+
+Style: Clean, modern, minimalistic with soft shadows, rounded corners, responsive layout
+
+Add a Download Resume button
+
+Keep project descriptions short (2–3 lines each) with problem → solution → impact format
+
+Tone: Professional yet approachable
+
+
+Generate the portfolio content in a format that I can easily use in HTML/CSS/React/Markdown."*
