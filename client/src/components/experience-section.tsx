@@ -26,7 +26,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-secondary/30" data-testid="experience-section">
+    <section id="experience" className="py-20 bg-gradient-to-b from-green-50/30 to-blue-50/30" data-testid="experience-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-testid="experience-title">

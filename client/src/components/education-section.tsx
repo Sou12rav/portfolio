@@ -2,7 +2,7 @@ import { GraduationCap } from "lucide-react";
 
 export default function EducationSection() {
   return (
-    <section id="education" className="py-20 bg-secondary/30" data-testid="education-section">
+    <section id="education" className="py-20 bg-gradient-to-b from-blue-50/50 to-purple-50/30" data-testid="education-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-testid="education-title">Education</h2>
