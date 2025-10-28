@@ -148,34 +148,33 @@ export default function ContactSection() {
             </form>
             
             <div className="mt-8 pt-8 border-t border-border">
+              <div className="text-center mb-6">
+                <p className="text-sm text-muted-foreground mb-2">Connect with me</p>
+                <p className="text-sm font-medium">souravacherjee2110@email.com</p>
+                <p className="text-sm text-muted-foreground">
+                  <a href="tel:+919508687335" className="hover:text-primary transition-colors">+91 9508687335</a>
+                  {" / "}
+                  <a href="tel:+918142739057" className="hover:text-primary transition-colors">+91 8142739057</a>
+                </p>
+              </div>
               <div className="flex justify-center space-x-6" data-testid="social-links">
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/sourav-acherjee-a41023230" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-linkedin"
+                  aria-label="LinkedIn Profile"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="link-github"
-                >
-                  <Github className="h-6 w-6" />
-                </a>
-                <a 
-                  href="#" 
+                  href="mailto:souravacherjee2110@email.com" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-email"
+                  aria-label="Email"
                 >
                   <Mail className="h-6 w-6" />
-                </a>
-                <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="link-twitter"
-                >
-                  <Twitter className="h-6 w-6" />
                 </a>
               </div>
             </div>

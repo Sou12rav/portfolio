@@ -18,14 +18,16 @@ export default function EducationSection() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold" data-testid="degree-title">
-                  B.Tech in Computer Science and Engineering
+                  Bachelor of Technology (B.Tech)
                 </h3>
-                <p className="text-muted-foreground" data-testid="graduation-year">2025 Graduate</p>
+                <p className="text-muted-foreground font-medium" data-testid="degree-major">Computer Science and Engineering</p>
+                <p className="text-muted-foreground" data-testid="graduation-year">Techno International Newtown, Kolkata | Graduated: 2025</p>
               </div>
             </div>
             <p className="text-muted-foreground" data-testid="degree-description">
-              Comprehensive study in computer science fundamentals, data structures, algorithms, 
-              and specialized focus on data analytics and artificial intelligence applications.
+              Comprehensive study in computer science fundamentals including Data Structures & Algorithms, 
+              Operating Systems, Object-Oriented Programming, Database Management Systems, and Computer Networks.
+              Specialized focus on AI/ML technologies and full-stack development.
             </p>
           </div>
         </div>

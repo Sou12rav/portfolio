@@ -1,54 +1,38 @@
-import { BarChart3, Plane, MessageSquare, GraduationCap, CloudSun, Laptop } from "lucide-react";
+import { MapPin, MessageSquare, Home, Award } from "lucide-react";
 
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Data Analyst Job Simulation",
-      problem: "Need for real-world data analysis experience",
-      solution: "Analyzed complex datasets and prepared business reports",
-      impact: "Extracted actionable insights for strategic decision-making",
-      icon: BarChart3,
-      gradient: "from-primary/20 to-accent/20"
+      title: "Travel Buddy | TechTitans",
+      role: "Team Lead (Final Year Project, 2025)",
+      description: "Led a 4-member team to build an AI-powered travel planner integrating weather, maps, and transport APIs. Developed backend in Python and frontend in ReactJS for real-time, seamless user interaction. Optimized API calls to improve system performance and enhance user experience.",
+      icon: MapPin,
+      gradient: "from-primary/20 to-accent/20",
+      tech: ["Python", "ReactJS", "APIs", "AI"]
+    },
+    {
+      title: "AI Content Engine",
+      role: "RAG-Based Document Analyzer",
+      description: "Created a Retrieval-Augmented Generation system to compare multiple company reports (Alphabet, Tesla, Uber). Implemented semantic search using LlamaIndex, ChromaDB, and BERT. Built an interactive Streamlit chatbot for document-based Q&A.",
+      icon: MessageSquare,
+      gradient: "from-accent/20 to-primary/20",
+      tech: ["LlamaIndex", "ChromaDB", "BERT", "Streamlit"]
+    },
+    {
+      title: "Homies",
+      role: "2nd Place - Inter-College Business Idea Competition 2022",
+      description: "Secured 2nd place in an Inter-College Business Idea Competition. Designed and developed a website for finding nearby stays and PG accommodations. Demonstrated innovation in solving real-world housing search problems.",
+      icon: Home,
+      gradient: "from-primary/20 to-accent/20",
+      tech: ["Web Development", "UI/UX", "Full Stack"]
     },
     {
       title: "Flight Delay Prediction",
-      problem: "Unpredictable flight delays affecting passengers",
-      solution: "Built ML model using EDA and predictive modeling",
-      impact: "Improved prediction accuracy for better planning",
-      icon: Plane,
-      gradient: "from-accent/20 to-primary/20"
-    },
-    {
-      title: "Content Engine with RAG",
-      problem: "Difficulty comparing multiple business reports",
-      solution: "Implemented RAG with LlamaIndex, ChromaDB, BERT",
-      impact: "Created intelligent chatbot for document analysis",
-      icon: MessageSquare,
-      gradient: "from-primary/20 to-accent/20"
-    },
-    {
-      title: "AI-Powered E-Learning Platform",
-      problem: "One-size-fits-all learning approaches",
-      solution: "Developed adaptive platform with AI recommendations",
-      impact: "Personalized learning experiences as Team Leader",
-      icon: GraduationCap,
-      gradient: "from-accent/20 to-primary/20"
-    },
-    {
-      title: "Weather Chatbot for Metro Cities",
-      problem: "Need for quick weather information access",
-      solution: "Created conversational bot with API integration",
-      impact: "Real-time weather updates through natural conversation",
-      icon: CloudSun,
-      gradient: "from-primary/20 to-accent/20"
-    },
-    {
-      title: "Educational Website",
-      problem: "Limited access to educational content online",
-      solution: "Built complete web platform for streaming content",
-      impact: "First full-stack project showcasing web development skills",
-      icon: Laptop,
-      gradient: "from-accent/20 to-primary/20"
+      role: "Tata Steel Vocational Training Project",
+      description: "Built a machine learning model to predict flight delays using regression techniques. Performed data cleaning, feature engineering, and model evaluation. Strengthened understanding of EDA and deployment workflows.",
+      icon: Award,
+      gradient: "from-accent/20 to-primary/20",
+      tech: ["Machine Learning", "Python", "EDA", "Regression"]
     }
   ];
 
@@ -64,7 +48,7 @@ export default function ProjectsSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={project.title}
@@ -75,13 +59,25 @@ export default function ProjectsSection() {
                 <project.icon className="h-16 w-16 text-primary" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3" data-testid={`project-title-${index}`}>
+                <h3 className="text-xl font-semibold mb-2" data-testid={`project-title-${index}`}>
                   {project.title}
                 </h3>
-                <div className="text-muted-foreground text-sm leading-relaxed" data-testid={`project-description-${index}`}>
-                  <p><strong>Problem:</strong> {project.problem}</p>
-                  <p><strong>Solution:</strong> {project.solution}</p>
-                  <p><strong>Impact:</strong> {project.impact}</p>
+                <p className="text-sm text-primary mb-3 font-medium" data-testid={`project-role-${index}`}>
+                  {project.role}
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4" data-testid={`project-description-${index}`}>
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, techIndex) => (
+                    <span
+                      key={tech}
+                      className="skill-badge bg-secondary text-secondary-foreground px-2 py-1 rounded text-xs font-medium"
+                      data-testid={`project-tech-${index}-${techIndex}`}
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

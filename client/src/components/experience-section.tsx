@@ -1,20 +1,27 @@
-import { Briefcase, Network } from "lucide-react";
+import { Briefcase, Award, Users } from "lucide-react";
 
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Internship & Simulations",
-      subtitle: "Data Analysis, Machine Learning, and AI-based projects",
-      description: "Gained hands-on experience through various data analysis internships and simulation projects, working with real-world datasets and developing practical solutions for business challenges.",
+      title: "Vocational Training | Tata Steel Ltd.",
+      subtitle: "Flight Delay Prediction using Machine Learning",
+      description: "Built a machine learning model to predict flight delays using regression techniques. Performed data cleaning, feature engineering, and model evaluation. Strengthened understanding of EDA and deployment workflows. Recognized for analytical excellence and initiative.",
       icon: Briefcase,
       color: "primary"
     },
     {
-      title: "Capstone & Assignments",
-      subtitle: "Applied RAG, ML models, and data-driven problem solving",
-      description: "Led comprehensive capstone projects implementing cutting-edge technologies like RAG, advanced machine learning models, and data-driven solutions for complex academic and practical challenges.",
-      icon: Network,
+      title: "Team Lead | TechTitans",
+      subtitle: "Final Year AI Project - Travel Buddy (2025)",
+      description: "Led a 4-member team to build an AI-powered travel planner integrating weather, maps, and transport APIs. Developed backend in Python and frontend in ReactJS for real-time, seamless user interaction. Optimized API calls to improve system performance.",
+      icon: Users,
       color: "accent"
+    },
+    {
+      title: "Leadership & Achievements",
+      subtitle: "Competition Winner & Academic Excellence",
+      description: "2nd Place in Inter-College Business Idea Competition for 'Homies'. Completed Google Data Analytics Capstone with 100% score. Demonstrated strong problem-solving, team leadership, and analytical thinking throughout academic journey.",
+      icon: Award,
+      color: "primary"
     }
   ];
 

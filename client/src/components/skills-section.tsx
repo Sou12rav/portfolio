@@ -3,22 +3,40 @@ import { Code, TrendingUp, Brain } from "lucide-react";
 export default function SkillsSection() {
   const skillCategories = [
     {
-      title: "Programming & Data",
+      title: "Languages",
       icon: Code,
       color: "primary",
-      skills: ["Python", "R", "SQL", "Java"]
+      skills: ["Python", "Java"]
     },
     {
-      title: "Data Analytics", 
-      icon: TrendingUp,
+      title: "Core Concepts", 
+      icon: Brain,
       color: "accent",
-      skills: ["Data Cleaning", "Visualization", "EDA", "Business Insights"]
+      skills: ["Data Structures & Algorithms", "Operating Systems", "OOP", "DBMS", "Computer Networks"]
     },
     {
-      title: "Machine Learning/AI",
+      title: "Frameworks & Tools",
+      icon: TrendingUp,
+      color: "primary", 
+      skills: ["ReactJS", "Streamlit", "Git", "Docker", "Linux", "LlamaIndex", "ChromaDB"]
+    },
+    {
+      title: "Databases",
+      icon: Code,
+      color: "accent", 
+      skills: ["MySQL", "MongoDB"]
+    },
+    {
+      title: "AI/ML & Analytics",
       icon: Brain,
       color: "primary", 
-      skills: ["Supervised Learning", "BERT", "RAG", "Recommendations"]
+      skills: ["BERT", "RAG", "Data Analytics", "Machine Learning"]
+    },
+    {
+      title: "Soft Skills",
+      icon: TrendingUp,
+      color: "accent", 
+      skills: ["Problem Solving", "Team Leadership", "Collaboration", "Analytical Thinking"]
     }
   ];
 
@@ -34,7 +52,7 @@ export default function SkillsSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div 
               key={category.title}
