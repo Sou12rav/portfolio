@@ -5,18 +5,18 @@ export default function ProjectsSection() {
     {
       title: "Travel Buddy | TechTitans",
       role: "Team Lead (Final Year Project, 2025)",
-      description: "Led a 4-member team to build an AI-powered travel planner integrating weather, maps, and transport APIs. Developed backend in Python and frontend in ReactJS for real-time, seamless user interaction. Optimized API calls to improve system performance and enhance user experience.",
+      description: "Led a team of four to develop an AI-powered personalized travel planner integrating weather, maps, and transport APIs. Designed backend in Python and frontend in ReactJS ensuring seamless real-time data flow. Deployed the application on cloud infrastructure using Docker and optimized API latency by 25%.",
       icon: MapPin,
       gradient: "from-primary/20 to-accent/20",
-      tech: ["Python", "ReactJS", "APIs", "AI"]
+      tech: ["Python", "ReactJS", "Docker", "Cloud", "APIs"]
     },
     {
       title: "AI Content Engine",
       role: "RAG-Based Document Analyzer",
-      description: "Created a Retrieval-Augmented Generation system to compare multiple company reports (Alphabet, Tesla, Uber). Implemented semantic search using LlamaIndex, ChromaDB, and BERT. Built an interactive Streamlit chatbot for document-based Q&A.",
+      description: "Developed a Retrieval-Augmented Generation (RAG) system to compare and analyze 10-K reports (Alphabet, Tesla, Uber). Built semantic search using LlamaIndex, ChromaDB, and BERT. Created a Streamlit chatbot interface for contextual document-based Q&A.",
       icon: MessageSquare,
       gradient: "from-accent/20 to-primary/20",
-      tech: ["LlamaIndex", "ChromaDB", "BERT", "Streamlit"]
+      tech: ["RAG", "LlamaIndex", "ChromaDB", "BERT", "Streamlit"]
     },
     {
       title: "Homies",
@@ -29,7 +29,7 @@ export default function ProjectsSection() {
     {
       title: "Flight Delay Prediction",
       role: "Tata Steel Vocational Training Project",
-      description: "Built a machine learning model to predict flight delays using regression techniques. Performed data cleaning, feature engineering, and model evaluation. Strengthened understanding of EDA and deployment workflows.",
+      description: "Implemented a machine learning pipeline for flight delay prediction using regression techniques. Conducted EDA, feature engineering, and performance optimization. Strengthened understanding of deployment workflows and model evaluation metrics.",
       icon: Award,
       gradient: "from-accent/20 to-primary/20",
       tech: ["Machine Learning", "Python", "EDA", "Regression"]

@@ -3,10 +3,10 @@ import { Code, TrendingUp, Brain } from "lucide-react";
 export default function SkillsSection() {
   const skillCategories = [
     {
-      title: "Languages",
+      title: "Programming Languages",
       icon: Code,
       color: "primary",
-      skills: ["Python", "Java"]
+      skills: ["Python", "Java", "C", "Shell Scripting"]
     },
     {
       title: "Core Concepts", 
@@ -18,25 +18,25 @@ export default function SkillsSection() {
       title: "Frameworks & Tools",
       icon: TrendingUp,
       color: "primary", 
-      skills: ["ReactJS", "Streamlit", "Git", "Docker", "Linux", "LlamaIndex", "ChromaDB"]
+      skills: ["Linux", "Git", "Docker", "Kubernetes", "Streamlit", "ReactJS", "LlamaIndex", "ChromaDB", "REST API"]
     },
     {
-      title: "Databases",
-      icon: Code,
-      color: "accent", 
-      skills: ["MySQL", "MongoDB"]
-    },
-    {
-      title: "AI/ML & Analytics",
+      title: "AI/ML Technologies",
       icon: Brain,
+      color: "accent", 
+      skills: ["BERT", "RAG", "TensorFlow", "PyTorch", "Data Analytics", "Machine Learning", "Jupyter Notebooks"]
+    },
+    {
+      title: "Cloud & Virtualization",
+      icon: TrendingUp,
       color: "primary", 
-      skills: ["BERT", "RAG", "Data Analytics", "Machine Learning"]
+      skills: ["OpenStack", "Red Hat OpenShift", "Virtualization", "AWS S3", "Azure Blob", "GCP", "DevOps (CI/CD)"]
     },
     {
       title: "Soft Skills",
-      icon: TrendingUp,
+      icon: Code,
       color: "accent", 
-      skills: ["Problem Solving", "Team Leadership", "Collaboration", "Analytical Thinking"]
+      skills: ["Team Leadership", "Analytical Thinking", "Problem Solving", "Communication"]
     }
   ];
 

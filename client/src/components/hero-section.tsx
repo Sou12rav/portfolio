@@ -1,75 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Download, User } from "lucide-react";
+import { Download } from "lucide-react";
+import profileImage from "@assets/dp_1761667356615.jpg";
+import resumePDF from "@assets/Sourav_Acherjee_Software_Engineer_Resume_1761667072658.pdf";
 
 export default function HeroSection() {
   const handleDownloadResume = () => {
-    const resumeContent = `
-SOURAV ACHERJEE
-Hyderabad, Telangana, India
-Email: souravacherjee2110@email.com | Phone: +91 9508687335 / +91 8142739057
-LinkedIn: https://www.linkedin.com/in/sourav-acherjee-a41023230
-
-OBJECTIVE
-Motivated Computer Science graduate with hands-on experience in AI-driven and full-stack projects. 
-Proficient in Python, Java, and web technologies with a strong grasp of data structures, algorithms, 
-and software design principles. Passionate about creating scalable, reliable, and user-focused 
-applications. Looking to contribute as a Software Developer in Hyderabad.
-
-TECHNICAL SKILLS
-• Languages: Python, Java
-• Core Concepts: Data Structures & Algorithms, Operating Systems, OOP, DBMS, Computer Networks
-• Frameworks & Tools: ReactJS, Streamlit, Git, Docker, Linux, LlamaIndex, ChromaDB
-• Databases: MySQL, MongoDB
-• AI/ML: BERT, Retrieval-Augmented Generation (RAG), Data Analytics, Machine Learning
-• Soft Skills: Problem Solving, Team Leadership, Collaboration, Analytical Thinking
-
-PROJECTS
-• Travel Buddy | TechTitans (Final Year Project, 2025)
-  - Led a 4-member team to build an AI-powered travel planner integrating weather, maps, and transport APIs
-  - Developed backend in Python and frontend in ReactJS for real-time, seamless user interaction
-  - Optimized API calls to improve system performance and enhance user experience
-
-• AI Content Engine (RAG-Based Document Analyzer)
-  - Created a Retrieval-Augmented Generation system to compare multiple company reports (Alphabet, Tesla, Uber)
-  - Implemented semantic search using LlamaIndex, ChromaDB, and BERT
-  - Built an interactive Streamlit chatbot for document-based Q&A
-
-• Homies (Business Idea Competition Project)
-  - Secured 2nd place in an Inter-College Business Idea Competition (2022)
-  - Designed and developed a website for finding nearby stays and PG accommodations
-
-VOCATIONAL TRAINING
-Tata Steel Ltd. - Flight Delay Prediction using Machine Learning
-- Built a machine learning model to predict flight delays using regression techniques
-- Performed data cleaning, feature engineering, and model evaluation
-- Strengthened understanding of EDA and deployment workflows
-
-EDUCATION
-Bachelor of Technology (B.Tech) – Computer Science and Engineering
-Techno International Newtown, Kolkata | Graduated: 2025
-
-CERTIFICATIONS
-• Google Data Analytics Professional Certificate – Coursera
-• Supervised Machine Learning: Regression and Classification – Coursera
-• Crash Course on Python – Coursera
-• Java Programming: Solving Problems with Software (with Honors) – Coursera
-
-LEADERSHIP & ACHIEVEMENTS
-• Team Lead, TechTitans – Final Year AI Project
-• Completed Google Data Analytics Capstone with 100% score
-• Recognized at Tata Steel for analytical excellence and initiative
-• 2nd Place, Inter-College Business Idea Competition for 'Homies'
-    `.trim();
-
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = window.URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = url;
-    link.download = 'resume.txt';
+    link.href = resumePDF;
+    link.download = 'Sourav_Acherjee_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
   };
 
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -91,9 +32,9 @@ LEADERSHIP & ACHIEVEMENTS
               <span className="text-foreground text-2xl sm:text-3xl lg:text-4xl">Software Developer</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="hero-description">
-              B.Tech Computer Science graduate from Kolkata, now in Hyderabad. 
-              Passionate about AI-driven and full-stack projects with expertise in Python, Java, 
-              ReactJS, and cutting-edge ML technologies. Building scalable, user-focused applications.
+              Passionate Computer Science Engineer with expertise in AI, Cloud, and Systems software development. 
+              Proficient in Python, Java, and Linux environments with a strong foundation in data structures, 
+              algorithms, and distributed systems. Building scalable, high-performance, and secure software solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -115,8 +56,12 @@ LEADERSHIP & ACHIEVEMENTS
             </div>
           </div>
           <div className="lg:justify-end flex justify-center">
-            <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center shadow-2xl" data-testid="profile-placeholder">
-              <User className="h-24 w-24 text-muted-foreground" />
+            <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 shadow-2xl ring-4 ring-primary/20 hover:ring-primary/40 transition-all duration-300" data-testid="profile-image">
+              <img 
+                src={profileImage} 
+                alt="Sourav Acherjee - Software Developer" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
